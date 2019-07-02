@@ -1,6 +1,6 @@
 #include "token.hpp"
 #include "checker.hpp"
-std::stack<std::string> calculate(std::string calc) {
+std::string calculate(std::string calc) {
     std::vector<std::string> tokens = generateTokens(calc);
     std::stack<std::string> tokensStack;
 
@@ -32,5 +32,5 @@ std::stack<std::string> calculate(std::string calc) {
             tokensStack.push(tokens.at(i));
         }
     }
-    return tokensStack;
+    return tokensStack.top();
 }
