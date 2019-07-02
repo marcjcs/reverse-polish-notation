@@ -1,0 +1,1 @@
+Simple reverse polish notation algorithm for school
