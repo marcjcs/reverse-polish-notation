@@ -6,11 +6,10 @@
 
 std::vector<std::string> generateTokens(std::string calc) {
     boost::char_separator<char> sep(" ");
-	typedef boost::tokenizer< boost::char_separator<char> > t_tokenizer;
+    typedef boost::tokenizer< boost::char_separator<char> > t_tokenizer;
 	t_tokenizer tok(calc, sep);
 
     std::vector<std::string> tokens;
-
     for(t_tokenizer::iterator beg=tok.begin(); beg!=tok.end(); ++beg) {
        tokens.push_back(*beg);
     }

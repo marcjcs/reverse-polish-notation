@@ -1,2 +1,5 @@
 // Ignoring VSCode files
 .vscode/*
+
+// Ignore all build files
+.build/*

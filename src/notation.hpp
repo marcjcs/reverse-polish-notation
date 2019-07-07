@@ -1,5 +1,6 @@
 #include "token.hpp"
 #include "checker.hpp"
+
 std::string calculate(std::string calc) {
     std::vector<std::string> tokens = generateTokens(calc);
     std::stack<std::string> tokensStack;
@@ -8,9 +9,12 @@ std::string calculate(std::string calc) {
         if (isOperator(tokens.at(i))) {
             int operand_2 = std::stoi(tokensStack.top());
             tokensStack.pop();
+
             int operand_1 = std::stoi(tokensStack.top());
             tokensStack.pop();
+
             int result;
+
             if (tokens.at(i) == "+") {
                 result = operand_1 + operand_2;
             }

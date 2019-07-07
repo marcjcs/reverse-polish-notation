@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/home/wized/reverse-polish-notation/build",
-  "command": "/usr/bin/g++-7   -I/usr/local/boost_1_70_0  -g   -std=gnu++14 -o CMakeFiles/reverse-polish-notation.dir/src/main.cpp.o -c /home/wized/reverse-polish-notation/src/main.cpp",
-  "file": "/home/wized/reverse-polish-notation/src/main.cpp"
-}
-]
